@@ -19,3 +19,9 @@ GROUP BY u.id_usuario, u.nombre, u.pais, u.tipo_plan
 HAVING Ultima_Actividad = 'Nunca ha visto contenido'
    OR Ultima_Actividad < DATE('2026-07-17', '-30 days')
 ORDER BY Ultima_Actividad ASC;
+
+
+--Conclusión de Negocio: 
+--Se detectaron usuarios en riesgo crítico de Churn. Destaca el caso de Luis Morales, quien pagó su suscripción pero registra cero minutos de uso, 
+--y clientes antiguos como María Silva que no entran a la plataforma desde hace más de 40 días.
+--Acción recomendada: Enviar una campaña de correo automatizada (Push Notification) a estos usuarios específicos sugiriéndoles los estrenos del mes de los géneros "Ciencia Ficción" y "Comedia", los cuales tienen la mayor tasa de retención en la plataforma.
