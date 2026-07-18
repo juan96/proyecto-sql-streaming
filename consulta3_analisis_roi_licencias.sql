@@ -1,8 +1,8 @@
--- CONSULTA 03: Eficiencia de Costo por Minuto Visto (ROI del Catálogo)
--- OBJETIVO: Evaluar el costo de licenciamiento de cada género en relación
+-- Consulta03: Eficiencia de Costo por Minuto Visto (ROI del Catálogo)
+-- Objetivo: Evaluar el costo de licenciamiento de cada género en relación
 --           con los minutos consumidos reales usando expresiones CTE.
--- ÁREA DE NEGOCIO: Finanzas y Presupuesto de Contenido.
--- IMPACTO: Calcula el "Costo por Minuto Visto" para identificar qué géneros
+-- Área de Negocio: Finanzas y Presupuesto de Contenido.
+-- Impacto: Calcula el "Costo por Minuto Visto" para identificar qué géneros
 --          son rentables y cuáles representan una pérdida financiera.
 
 WITH Costo_Por_Genero AS (
