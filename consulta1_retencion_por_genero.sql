@@ -18,3 +18,8 @@ FROM historial_reproduccion h
 JOIN contenido c ON h.id_contenido = c.id_contenido
 GROUP BY c.genero
 ORDER BY Porcentaje_Retencion DESC;
+
+--Conclusión de Negocio: 
+--El género Ciencia Ficción y la Comedia tienen una retención cercana al 100% 
+--lo que significa que los usuarios los ven completos. Sin embargo, el género Terror tiene un porcentaje de retención muy bajo (menos del 20%).
+--Acción recomendada: Sugiero al equipo de compras no adquirir más licencias de películas de Terror, ya que los usuarios las abandonan a los pocos minutos, y reasignar ese presupuesto a Ciencia Ficción.
