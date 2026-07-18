@@ -1,3 +1,8 @@
+-- Consulta01: Analisis de engagement y retencion por genero
+--Objetivo: Calcular el porcentaje de minutos reproducidos frente a la duracion total del catalogo para medir el enganche de la audiencia.
+--Area de Negocio: Estrategia de Contenido y Producto.
+--Impacto: Identifica que categorias se ven completas y cuales sufren de abandono temprano para guiar furturas producciones o compras.
+
 SELECT
     c.genero AS Genero,
     COUNT(h.id_reproduccion) AS Total_Reproducciones,
