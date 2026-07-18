@@ -1,3 +1,11 @@
+-- CONSULTA 02: Alerta Preventiva de Churn (Usuarios Inactivos)
+-- OBJETIVO: Detectar clientes con suscripción activa que no registran
+--           reproducciones en los últimos 30 días o que nunca han usado la plataforma.
+-- ÁREA DE NEGOCIO: Retención de Clientes y Marketing.
+-- IMPACTO: Proporciona una lista segmentada de usuarios en riesgo para
+--          lanzar campañas dirigidas de correo o notificaciones push.
+
+
 SELECT
     u.id_usuario,
     u.nombre AS Cliente,
