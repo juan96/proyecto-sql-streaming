@@ -28,3 +28,8 @@ SELECT
 FROM Costo_Por_Genero cg
 LEFT JOIN Consumo_Por_Genero cx ON cg.genero = cx.genero
 ORDER BY cg.costo_total_licencia / IFNULL(cx.minutos_totales_vistos, 1) ASC;
+
+--Conclusión de Negocio: 
+--El género Comedia es el más eficiente de la plataforma: sus licencias costaron solo $7,000 pero generaron 250 minutos de reproducción, costándonos apenas unos $28 dólares por minuto visto.
+--Por el contrario, el género Drama (La Casa de Papelitos) costó $12,000 en licencias y solo se ha visto 90 minutos, disparando su costo a $133.33 dólares por minuto.
+Acción recomendada: El género Drama está sobrevalorado en costos. Se recomienda negociar a la baja la renovación de esa licencia o reemplazarla por más contenido de Comedia o Documentales, que tienen un retorno de inversión (ROI) mucho más saludable.
