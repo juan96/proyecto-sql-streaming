@@ -1,9 +1,11 @@
--- Consulta01: Analisis de engagement y retencion por genero
---Objetivo: Calcular el porcentaje de minutos reproducidos frente a la duracion total del catalogo para medir el enganche de la audiencia.
---Area de Negocio: Estrategia de Contenido y Producto.
---Impacto: Identifica que categorias se ven completas y cuales sufren de abandono temprano para guiar furturas producciones o compras.
+-- CONSULTA 03: Eficiencia de Costo por Minuto Visto (ROI del Catálogo)
+-- OBJETIVO: Evaluar el costo de licenciamiento de cada género en relación
+--           con los minutos consumidos reales usando expresiones CTE.
+-- ÁREA DE NEGOCIO: Finanzas y Presupuesto de Contenido.
+-- IMPACTO: Calcula el "Costo por Minuto Visto" para identificar qué géneros
+--          son rentables y cuáles representan una pérdida financiera.
 
-WIT de H Costo_Por_Genero AS (
+WITH Costo_Por_Genero AS (
     SELECT genero, SUM(costo_licencia) AS costo_total_licencia
     FROM contenido
     GROUP BY genero
